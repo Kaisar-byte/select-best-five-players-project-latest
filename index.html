@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Best Five Players Project</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/3894a6573f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header class="w-full mx-auto text-center h-95 bg-black">
+        <section class="flex flex-row">
+            <div class="w-1/4">
+                <div class="flex flex-col justify-end ">
+                    <img class="" src="images/banner-left-player.png" alt="">
+                </div>
+            </div>
+            <div class="w-2/4 flex flex-col justify-center gap-4">
+                <h1 id="FirstHeading" class="text-6xl font-BerkshireSwash-600">Select Your Best Five</h1>
+                <div class="flex justify-end">
+                    <img class="w-36 h-4" src="images/hdg-line.png" alt="">
+                </div>
+                <p class="text-white px-16">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                    Velit
+                    officia consequat
+                    duis enim
+                    velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+            <div class="w-1/4">
+                <div class="flex flex-col">
+                    <div>
+                        <img class="h-48 pt-8 mt-12" src="images/banner-img-messi.png" alt="">
+                    </div>
+                    <div class="flex justify-end">
+                        <div id="banner-football" class="w-24">
+                            <img class="h-32" src="images/banner-footbal.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="bg-slate-800">
+        <section class="w-11/12 mx-auto flex">
+            <!-- main card box -->
+            <section class="w-3/4 grid grid-cols-3 gap-2 p-4">
+                <!-- Player Card-1 -->
+                <div class="w-fit border-solid border-2 border-orange-400 m-4">
+                    <div class=" flex flex-col justify-center bg-slate-800 align-center text-white">
+                        <img src="images/card-img-messi.png" alt="">
+                        <div class="grid grid-row-1 gap-4 py-4">
+                            <h5 class="player text-lg font-bold text-center text-slate-100 tracking-widest">Lionel Messi
+                            </h5>
+                            <div class="flex flex-row justify-evenly">
+                                <h4>36 Goals</h4>
+                                <p><i class="fa-solid fa-square"></i></p>
+                                <h4>120 Assist</h4>
+                            </div>
+                            <button id="btn-messi"
+                                class="bg-blue-400 px-16 py-2 font-bold tracking-widest text-center mx-auto">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Player Card-1 -->
+                <!-- Player Card-2 -->
+                <div class="w-fit border-solid border-2 border-orange-400 m-4">
+                    <div class=" flex flex-col justify-center bg-slate-800 align-center text-white">
+                        <img src="images/card-img-macado.png" alt="">
+                        <div class="grid grid-row-1 gap-4 py-4">
+                            <h5 class="text-lg font-bold text-center text-slate-100 tracking-widest">Victor Machado</h5>
+                            <div class="flex flex-row justify-evenly">
+                                <h4>36 Goals</h4>
+                                <p><i class="fa-solid fa-square"></i></p>
+                                <h4>120 Assist</h4>
+                            </div>
+                            <button id="btn-player"
+                                class="bg-blue-400 px-16 py-2 font-bold tracking-widest text-center mx-auto">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Player Card-2 -->
+                <!-- Player Card-3 -->
+                <div class="w-fit border-solid border-2 border-orange-400 m-4">
+                    <div class=" flex flex-col justify-center bg-slate-800 align-center text-white">
+                        <img src="images/card-img-mbapi.png" alt="">
+                        <div class="grid grid-row-1 gap-4 py-4">
+                            <h5 class="text-lg font-bold text-center text-slate-100 tracking-widest">Kylian Mbappé</h5>
+                            <div class="flex flex-row justify-evenly">
+                                <h4>36 Goals</h4>
+                                <p><i class="fa-solid fa-square"></i></p>
+                                <h4>120 Assist</h4>
+                            </div>
+                            <button id="btn-player"
+                                class="bg-blue-400 px-16 py-2 font-bold tracking-widest text-center mx-auto">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Player Card-3 -->
+                <!-- Player Card-4 -->
+                <div class="w-fit border-solid border-2 border-orange-400 m-4">
+                    <div class=" flex flex-col justify-center bg-slate-800 align-center text-white">
+                        <img src="images/card-img-neymarpng.png" alt="">
+                        <div class="grid grid-row-1 gap-4 py-4">
+                            <h5 class="text-lg font-bold text-center text-slate-100 tracking-widest">Neymar Jr</h5>
+                            <div class="flex flex-row justify-evenly">
+                                <h4>36 Goals</h4>
+                                <p><i class="fa-solid fa-square"></i></p>
+                                <h4>120 Assist</h4>
+                            </div>
+                            <button id="btn-player"
+                                class="bg-blue-400 px-16 py-2 font-bold tracking-widest text-center mx-auto">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Player Card-4 -->
+                <!-- Player Card-5 -->
+                <div class="w-fit border-solid border-2 border-orange-400 m-4">
+                    <div class=" flex flex-col justify-center bg-slate-800 align-center text-white">
+                        <img src="images/card-img-renato.png" alt="">
+                        <div class="grid grid-row-1 gap-4 py-4">
+                            <h5 class="text-lg font-bold text-center text-slate-100 tracking-widest">Renato Sanches</h5>
+                            <div class="flex flex-row justify-evenly">
+                                <h4>36 Goals</h4>
+                                <p><i class="fa-solid fa-square"></i></p>
+                                <h4>120 Assist</h4>
+                            </div>
+                            <button id="btn-player"
+                                class="bg-blue-400 px-16 py-2 font-bold tracking-widest text-center mx-auto">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Player Card-5 -->
+                <!-- Player Card-6 -->
+                <div class="w-fit border-solid border-2 border-orange-400 m-4">
+                    <div class=" flex flex-col justify-center bg-slate-800 align-center text-white">
+                        <img src="images/card-img-sergio.png" alt="">
+                        <div class="grid grid-row-1 gap-4 py-4">
+                            <h5 class="text-lg font-bold text-center text-slate-100 tracking-widest">Sergio Agüero</h5>
+                            <div class="flex flex-row justify-evenly">
+                                <h4>36 Goals</h4>
+                                <p><i class="fa-solid fa-square"></i></p>
+                                <h4>120 Assist</h4>
+                            </div>
+                            <button id="btn-player"
+                                class="bg-blue-400 px-16 py-2 font-bold tracking-widest text-center mx-auto">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Player Card-6 -->
+            </section>
+            <!-- main card box -->
+
+            <!-- fixed nav -->
+            <section class="w-1/4 text-white">
+                <div class="w-64 h-[22rem] border-2 border-solid border-orange-400 m-4 mt-8 text-lg p-4 bg-blue-800">
+                    <h2
+                        class="text-2xl text-center font-bold underline decoration-4 decoration-wavy decoration-orange-400 mb-4">
+                        Selected
+                        5 Players
+                    </h2>
+                    <ol class="text-3xl flex flex-col gap-2 justify-center">
+                        <li>Player 1</li>
+                        <li>Player 2</li>
+                        <li>Player 3</li>
+                        <li>Player 4</li>
+                        <li>Player 5</li>
+                    </ol>
+                </div>
+                <div
+                    class="w-64 h-88 border-2 border-solid border-orange-400 m-4 mt-8 text-lg p-4 bg-orange-800 flex flex-col gap-2 mt-12">
+                    <h2
+                        class="text-2xl text-center font-bold underline decoration-4 decoration-wavy decoration-orange-400 mb-4">
+                        Budgets</h2>
+                    <div class="flex justify-between">
+                        <h3 class="text-left text-md">Per Player</h3>
+                        <input id="per-player-input" type="text" class="w-32 h-8 border-2 border-white bg-slate-400">
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <button id="btn-calculate" class="text-center bg-blue-400">Calculate</button>
+                    </div>
+                    <div class="flex justify-between">
+                        <h3>Player Expense:</h3>
+                        <span id="player-total-price"></span>
+                    </div>
+                    <div class="flex justify-between">
+                        <h3 class="text-left text-md">Manager</h3>
+                        <input class="w-32 h-8 border-2 border-white bg-slate-400" type="text" name="" id="">
+                    </div>
+                    <div class="flex justify-between">
+                        <h3 class="text-left text-md">Coach</h3>
+                        <input class="w-32 h-8 border-2 border-white bg-slate-400" type="text" name="" id="">
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <button class="text-center bg-blue-400">Calculate Total</button>
+                    </div>
+                    <div class="flex justify-between">
+                        <h3>Total:</h3>
+                        <span></span>
+                    </div>
+                </div>
+            </section>
+            <div class="mb-12 pd-12 w-12">
+                <div class="grid grid-cols-1 divide-y">
+                    <div>01</div>
+                    <div>02</div>
+                    <div>03</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div class="grid grid-cols-1 divide-y h-24 bg-slate-400 h-4">
+                <p></p>
+                <h4 class="text-center my-4 text-white">selectbestfiveplayersproject</h4>
+
+            </div>
+        </section>
+    </footer>
+    <script src="script/utilities.js"></script>
+    <script src="script/calculate.js"></script>
+    <script src="script/playerSelection.js"></script>
+</body>
+
+</html>
