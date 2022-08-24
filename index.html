@@ -55,7 +55,9 @@
                     <div class=" flex flex-col justify-center bg-slate-800 align-center text-white">
                         <img src="images/card-img-messi.png" alt="">
                         <div class="grid grid-row-1 gap-4 py-4">
-                            <h5 class="player text-lg font-bold text-center text-slate-100 tracking-widest">Lionel Messi
+                            <h5 id="player-name" class="text-lg font-bold text-center text-slate-100 tracking-widest">
+                                Lionel
+                                Messi
                             </h5>
                             <div class="flex flex-row justify-evenly">
                                 <h4>36 Goals</h4>
@@ -80,7 +82,8 @@
                                 <h4>120 Assist</h4>
                             </div>
                             <button id="btn-player"
-                                class="bg-blue-400 px-16 py-2 font-bold tracking-widest text-center mx-auto">SELECT</button>
+                                class="bg-blue-400 px-16 py-2 font-bold tracking-widest text-center mx-auto"
+                                disabled>SELECT</button>
                         </div>
                     </div>
                 </div>
@@ -140,14 +143,15 @@
                 <div class="w-fit border-solid border-2 border-orange-400 m-4">
                     <div class=" flex flex-col justify-center bg-slate-800 align-center text-white">
                         <img src="images/card-img-sergio.png" alt="">
-                        <div class="grid grid-row-1 gap-4 py-4">
-                            <h5 class="text-lg font-bold text-center text-slate-100 tracking-widest">Sergio Agüero</h5>
+                        <div id="player" class="grid grid-row-1 gap-4 py-4">
+                            <h5 id="player-name" class="text-lg font-bold text-center text-slate-100 tracking-widest">
+                                Sergio Agüero</h5>
                             <div class="flex flex-row justify-evenly">
                                 <h4>36 Goals</h4>
                                 <p><i class="fa-solid fa-square"></i></p>
                                 <h4>120 Assist</h4>
                             </div>
-                            <button id="btn-player"
+                            <button onclick="getListToBestFivePlayer()" id="btn-player1"
                                 class="bg-blue-400 px-16 py-2 font-bold tracking-widest text-center mx-auto">SELECT</button>
                         </div>
                     </div>
@@ -158,18 +162,15 @@
 
             <!-- fixed nav -->
             <section class="w-1/4 text-white">
-                <div class="w-64 h-[22rem] border-2 border-solid border-orange-400 m-4 mt-8 text-lg p-4 bg-blue-800">
-                    <h2
+                <div id="best-five-players-container"
+                    class="w-64 h-[22rem] border-2 border-solid border-orange-400 m-4 mt-8 text-lg p-4 bg-blue-800">
+                    <h2 id="selected-five-best"
                         class="text-2xl text-center font-bold underline decoration-4 decoration-wavy decoration-orange-400 mb-4">
                         Selected
                         5 Players
                     </h2>
-                    <ol class="text-3xl flex flex-col gap-2 justify-center">
-                        <li>Player 1</li>
-                        <li>Player 2</li>
-                        <li>Player 3</li>
-                        <li>Player 4</li>
-                        <li>Player 5</li>
+                    <ol type="1" id="player-Name-Container">
+                        <li></li>
                     </ol>
                 </div>
                 <div
@@ -207,9 +208,7 @@
             </section>
             <div class="mb-12 pd-12 w-12">
                 <div class="grid grid-cols-1 divide-y">
-                    <div>01</div>
-                    <div>02</div>
-                    <div>03</div>
+
                 </div>
             </div>
         </section>
@@ -217,9 +216,8 @@
     <footer>
         <section>
             <div class="grid grid-cols-1 divide-y h-24 bg-slate-400 h-4">
-                <p></p>
                 <h4 class="text-center my-4 text-white">selectbestfiveplayersproject</h4>
-
+                <p></p>
             </div>
         </section>
     </footer>
