@@ -1,43 +1,14 @@
-function setPlayerName(plaYer) {
-    const players = document.getElementById('player-Name-Container');
-    const li = document.createElement('li');
-    li.innerText = plaYer;
-    players.appendChild(li);
-}
+function showPlayerName(playerName) {
+    const playerNameOl = document.getElementById('fivePlayers');
+    const playerNameLi = document.createElement('li');
+    playerNameLi.innerText = playerName;
 
-document.getElementById('btn-messi').addEventListener('click', function () {
-    if (document.getElementById('btn-messi').clicked === 1) {
-        document.getElementById('btn-messi').setAttribute(this.disabled);
-    } else {
-        const messi = getInnertextFromId('player-name');
-        setPlayerName(messi);
-    }
+    playerNameOl.appendChild(playerNameLi);
+    const playersElement = document.getElementById('selected-five-best');
+    const LiLength = playerNameOl.childNodes.length - 1;
 
-
-})
-
-const btn = document.getElementById('btn-player1');
-function createList() {
-
-    const NameOfplayer = btn.parentElement.firstElementChild.innerText;
-    const mainContainer = document.getElementById('best-five-players-container');
-
-    var ol = document.createElement('ol');
-    ol.style.listStyle = "upper-alpha";
-    for (let i = 0; i < 1; i++) {
-        var li = document.createElement('li');
-        li.innerText = NameOfplayer;
-        ol.appendChild(li);
-        mainContainer.appendChild(ol)
-    }
-}
-// Player name 
-
-function getListToBestFivePlayer() {
-
-    if (btn.clicked === true) {
-        btn.style.disabled = true;
-    } else {
-        createList();
+    if (LiLength > 5) {
+        document.getElementsByTagName('button').disabled = 'true';
+        playerNameOl.removeChild(playerNameLi);
     }
 }

@@ -64,7 +64,7 @@
                                 <p><i class="fa-solid fa-square"></i></p>
                                 <h4>120 Assist</h4>
                             </div>
-                            <button id="btn-messi"
+                            <button onclick="showPlayerName('Lionel Messi')" id="player-one"
                                 class="bg-blue-400 px-16 py-2 font-bold tracking-widest text-center mx-auto">SELECT</button>
                         </div>
                     </div>
@@ -81,9 +81,8 @@
                                 <p><i class="fa-solid fa-square"></i></p>
                                 <h4>120 Assist</h4>
                             </div>
-                            <button id="btn-player"
-                                class="bg-blue-400 px-16 py-2 font-bold tracking-widest text-center mx-auto"
-                                disabled>SELECT</button>
+                            <button onclick="showPlayerName('Victor Machado')" id="player-two"
+                                class="bg-blue-400 px-16 py-2 font-bold tracking-widest text-center mx-auto">SELECT</button>
                         </div>
                     </div>
                 </div>
@@ -99,7 +98,7 @@
                                 <p><i class="fa-solid fa-square"></i></p>
                                 <h4>120 Assist</h4>
                             </div>
-                            <button id="btn-player"
+                            <button onclick="showPlayerName('Kylian Mbappé')" id="player"
                                 class="bg-blue-400 px-16 py-2 font-bold tracking-widest text-center mx-auto">SELECT</button>
                         </div>
                     </div>
@@ -116,7 +115,7 @@
                                 <p><i class="fa-solid fa-square"></i></p>
                                 <h4>120 Assist</h4>
                             </div>
-                            <button id="btn-player"
+                            <button onclick="showPlayerName('Neymar Jr')"
                                 class="bg-blue-400 px-16 py-2 font-bold tracking-widest text-center mx-auto">SELECT</button>
                         </div>
                     </div>
@@ -133,7 +132,7 @@
                                 <p><i class="fa-solid fa-square"></i></p>
                                 <h4>120 Assist</h4>
                             </div>
-                            <button id="btn-player"
+                            <button onclick="showPlayerName('Renato Sanches')" id="player"
                                 class="bg-blue-400 px-16 py-2 font-bold tracking-widest text-center mx-auto">SELECT</button>
                         </div>
                     </div>
@@ -151,7 +150,7 @@
                                 <p><i class="fa-solid fa-square"></i></p>
                                 <h4>120 Assist</h4>
                             </div>
-                            <button onclick="getListToBestFivePlayer()" id="btn-player1"
+                            <button onclick="showPlayerName('Sergio Agüero')" id="player"
                                 class="bg-blue-400 px-16 py-2 font-bold tracking-widest text-center mx-auto">SELECT</button>
                         </div>
                     </div>
@@ -169,8 +168,8 @@
                         Selected
                         5 Players
                     </h2>
-                    <ol type="1" id="player-Name-Container">
-                        <li></li>
+                    <ol class="mx-4 px-4 list-decimal text-xl flex flex-col gap-2 justify-center" id="fivePlayers">
+
                     </ol>
                 </div>
                 <div
