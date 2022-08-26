@@ -64,7 +64,7 @@
                                 <p><i class="fa-solid fa-square"></i></p>
                                 <h4>120 Assist</h4>
                             </div>
-                            <button onclick="showPlayerName('Lionel Messi')" id="player-one"
+                            <button onclick="showPlayerName('Lionel Messi')" id="player-btn"
                                 class="bg-blue-400 px-16 py-2 font-bold tracking-widest text-center mx-auto">SELECT</button>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                                 <p><i class="fa-solid fa-square"></i></p>
                                 <h4>120 Assist</h4>
                             </div>
-                            <button onclick="showPlayerName('Victor Machado')" id="player-two"
+                            <button onclick="showPlayerName('Victor Machado')" id="player-btn"
                                 class="bg-blue-400 px-16 py-2 font-bold tracking-widest text-center mx-auto">SELECT</button>
                         </div>
                     </div>
@@ -98,7 +98,7 @@
                                 <p><i class="fa-solid fa-square"></i></p>
                                 <h4>120 Assist</h4>
                             </div>
-                            <button onclick="showPlayerName('Kylian Mbappé')" id="player"
+                            <button onclick="showPlayerName('Kylian Mbappé')" id="player-btn"
                                 class="bg-blue-400 px-16 py-2 font-bold tracking-widest text-center mx-auto">SELECT</button>
                         </div>
                     </div>
@@ -115,7 +115,7 @@
                                 <p><i class="fa-solid fa-square"></i></p>
                                 <h4>120 Assist</h4>
                             </div>
-                            <button onclick="showPlayerName('Neymar Jr')"
+                            <button onclick="showPlayerName('Neymar Jr')" id="player-btn"
                                 class="bg-blue-400 px-16 py-2 font-bold tracking-widest text-center mx-auto">SELECT</button>
                         </div>
                     </div>
@@ -132,7 +132,7 @@
                                 <p><i class="fa-solid fa-square"></i></p>
                                 <h4>120 Assist</h4>
                             </div>
-                            <button onclick="showPlayerName('Renato Sanches')" id="player"
+                            <button onclick="showPlayerName('Renato Sanches')" id="player-btn"
                                 class="bg-blue-400 px-16 py-2 font-bold tracking-widest text-center mx-auto">SELECT</button>
                         </div>
                     </div>
@@ -150,7 +150,7 @@
                                 <p><i class="fa-solid fa-square"></i></p>
                                 <h4>120 Assist</h4>
                             </div>
-                            <button onclick="showPlayerName('Sergio Agüero')" id="player"
+                            <button onclick="showPlayerName('Sergio Agüero')" id="player-btn"
                                 class="bg-blue-400 px-16 py-2 font-bold tracking-widest text-center mx-auto">SELECT</button>
                         </div>
                     </div>
@@ -161,16 +161,19 @@
 
             <!-- fixed nav -->
             <section class="w-1/4 text-white">
-                <div id="best-five-players-container"
+                <div id="players-container"
                     class="w-64 h-[22rem] border-2 border-solid border-orange-400 m-4 mt-8 text-lg p-4 bg-blue-800">
-                    <h2 id="selected-five-best"
-                        class="text-2xl text-center font-bold underline decoration-4 decoration-wavy decoration-orange-400 mb-4">
-                        Selected
-                        5 Players
-                    </h2>
-                    <ol class="mx-4 px-4 list-decimal text-xl flex flex-col gap-2 justify-center" id="fivePlayers">
+                    <div>
+                        <h2
+                            class="text-2xl text-center font-bold underline decoration-4 decoration-wavy decoration-orange-400 mb-4">
+                            Selected
+                            5 Players
+                        </h2>
+                        <ol class="list-decimal mx-8 font-bold text-lg text-amber-400" id="bestPlayersName">
+                            <!-- <li></li> -->
+                        </ol>
+                    </div>
 
-                    </ol>
                 </div>
                 <div
                     class="w-64 h-88 border-2 border-solid border-orange-400 m-4 mt-8 text-lg p-4 bg-orange-800 flex flex-col gap-2 mt-12">
@@ -186,22 +189,22 @@
                     </div>
                     <div class="flex justify-between">
                         <h3>Player Expense:</h3>
-                        <span id="player-total-price"></span>
+                        <span id="player-expense"></span>
                     </div>
                     <div class="flex justify-between">
                         <h3 class="text-left text-md">Manager</h3>
-                        <input class="w-32 h-8 border-2 border-white bg-slate-400" type="text" name="" id="">
+                        <input id="manager" class="w-32 h-8 border-2 border-white bg-slate-400" type="text">
                     </div>
                     <div class="flex justify-between">
                         <h3 class="text-left text-md">Coach</h3>
-                        <input class="w-32 h-8 border-2 border-white bg-slate-400" type="text" name="" id="">
+                        <input id="coach" class="w-32 h-8 border-2 border-white bg-slate-400" type="text">
                     </div>
                     <div class="flex flex-col justify-center">
-                        <button class="text-center bg-blue-400">Calculate Total</button>
+                        <button id="btn-total-calculate" class="text-center bg-blue-400">Calculate Total</button>
                     </div>
                     <div class="flex justify-between">
                         <h3>Total:</h3>
-                        <span></span>
+                        <span id="grand-total"></span>
                     </div>
                 </div>
             </section>
