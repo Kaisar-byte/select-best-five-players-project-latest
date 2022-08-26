@@ -9,5 +9,5 @@ function showPlayerName(playerName) {
         ol.appendChild(li);
         count++
     }
-
 }
+
